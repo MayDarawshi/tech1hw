@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #1b688b;
+  color: white;
+}
+header {
+
+  background-color: #000000;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}ul {
+  list-style: none;
+  margin-left: 2px;
+  padding: 2px;
+  float: right;
+}nav li {
+  display: inline-block;
+  margin-left: 25px;
+  height: 70px;
+  line-height: 70px;
+  transition: .5s linear;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+nav a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  background: #868686;
+  transition: width .5s linear;
+}
+
+nav a:hover:after {
+  width: 100%;
+}
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clearbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  color: #156f86;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1a6183;
+  color: white;
+}
+
+.todo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+
+.todo {
+  margin: 0.5rem;
+  background-color: white;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+  max-width: 500px;
+  overflow-x: auto;
+}
+
+.clear-Btn {
+  background: #2492c5;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.clear-Btn:hover {
+  background: white;
+  color: #1957a8;
+}
+.star-Btn,
+.trash-Btn,
+.comp-Btn {
+  background: #276da7;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.star-Btn {
+  background: #ba1bd6;
+  color: white;
+}
+.star-Btn:hover {
+  background: white;
+  color: #cc3cdf;
+}
+.trash-Btn:hover {
+  color: #a519b8;
+  background: white;
+}
+.comp-Btn:hover {
+  color: #00ac56;
+  background-color: white;
+}
+.comp-Btn {
+  background-color: #00ac56;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+.fa-broom,
+.fa-star,
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.stared {
+  background-color: #b23cd6;
+  color: black;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #1791a1;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1.1rem;
+  font-weight: bold;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #2164b1;
+  color: white;
+  font-weight: bold;
+  top: 0;
+  right: 0;
+  padding: 1.1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  background: #5d97da;
+  color: white;
+}
+h1{
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  header,
+  form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .clearbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  select {
+    width: 20rem;
+    padding: 1.5rem;
+  }
+  .select {
+    margin: 1.5rem;
+    max-width: 300px;
+  }
+  .select::after {
+    padding: 1.5rem;
+  }
+  .todo-input {
+    max-width: 300px;
+  }
+}
+a {
+  font-size: larger;
+  color: aliceblue;
+  margin-left: 20px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-left: 750px;
+}
+
+.itemImage {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.qua {
+  width: 60px;
+  height: 20px;
+  border-radius: 5px;
+}

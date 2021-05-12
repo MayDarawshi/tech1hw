@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="download.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY STORE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+  
+    <a href="login.html">LogIn</a>
+    <a href="signup.html">SignUp</a><br><br><br>
+    <h1 style="margin-left: 750px"><br>
+      Write The Name Of The Item You Want To Buy
+    </h1>
+    <form>
+      <br />
+      <br />
+      <input type="text" class="todo-input" />
+      <button class="todo-btn" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+          <option value="starred">Starred</option>
+        </select>
+      </div>
+    </form>
+    <hr />
+    <br />
+    <div class="main">
+      <div>
+        <h1>Running Shoes</h1>
+        <img
+          class="itemImage"
+          src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy/56e34914f74441f0a142aa8e00f49ae7_9366/nmd_r1-shoes.jpg"
+        /><br />
+        <label>Quantity</label>
+        <input type="number" size="5" class="qua" /><br />
+        <label>Price:10$</label><br>
+        <button type="button">Add Item</button>
+        <button type="button">Remove Item</button>
+
+
+        <!-- <label>Quantity</label>
+        <input class="btn" type="number" value="Quantity" />
+         -->
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shirt</h1>
+        <img
+          class="itemImage"
+          src="https://cdn.fashiola.com/L493992119/adidas-3-stripes-t-shirt.jpg"
+        />
+        <br />
+        <label>Quantity</label>
+        <input type="number" size="5" class="qua" /><br />
+        <label>Price:10$</label><br>
+        <button type="button">Add Item</button>
+        <button type="button">Remove Item</button>
+
+        <!-- <label>Quantity</label>
+        <input class="btn" type="number" value="Quantity" /> -->
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div>
+        <h1>Training Pants</h1>
+        <img
+          class="itemImage"
+          src="https://www.directsoccer.co.uk/upload/img/747x856/1420814012-41280800.png"
+        /><br />
+        <label>Quantity</label>
+        <input type="number" size="5" class="qua" /><br />
+        <label>Price:10$</label><br>
+        <button type="button">Add Item</button>
+        <button type="button">Remove Item</button>
+        <!-- <label>Quantity</label>
+        <input class="btn" type="number" value="Quantity" /> -->
+      </div>
+    </div>
+
+    <div class="todo-box">
+      <ul class="todo-list"></ul>
+      <br />
+    </div>
+    <div class="clearbutton">
+      <button class="clear-Btn">
+        <i class="fas fa-broom"> Clear List </i>
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="test-helpers.js"></script>
+    <script src="index.test.js"></script>
+  </body>
+</html>
